@@ -1,0 +1,54 @@
+[debug] [2021-10-29T13:47:37.984Z] ----------------------------------------------------------------------
+[debug] [2021-10-29T13:47:37.987Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Arif Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-10-29T13:47:37.988Z] CLI Version:   9.20.0
+[debug] [2021-10-29T13:47:37.988Z] Platform:      win32
+[debug] [2021-10-29T13:47:37.988Z] Node Version:  v14.17.1
+[debug] [2021-10-29T13:47:37.989Z] Time:          Fri Oct 29 2021 19:47:37 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-10-29T13:47:37.990Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-29T13:47:37.993Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-10-29T13:47:38.166Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-29T13:47:38.167Z] > authorizing via signed-in user (ahammadarif232@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Complete Web Development Course With Jhankar Mahbub\NODE JS\ema-john-with-auth-module-59
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[debug] [2021-10-29T13:47:39.353Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-10-29T13:47:39.354Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using ema-john-simple-e9bd8. 
+[debug] [2021-10-29T13:48:09.391Z] > refreshing access token with scopes: []
+[debug] [2021-10-29T13:48:09.392Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-29T13:48:09.711Z] <<< HTTP RESPONSE 200 {"date":"Fri, 29 Oct 2021 13:48:08 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-29T13:48:09.741Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ema-john-simple-e9bd8 [none]
+[debug] [2021-10-29T13:48:10.337Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ema-john-simple-e9bd8 403
+[debug] [2021-10-29T13:48:10.338Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ema-john-simple-e9bd8 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2021-10-29T13:48:10.340Z] HTTP Error: 403, The caller does not have permission
+[debug] [2021-10-29T13:48:10.602Z] FirebaseError: HTTP Error: 403, The caller does not have permission
+    at module.exports (C:\Users\Arif Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:38:12)
+    at Client.doRequest (C:\Users\Arif Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:238:23)
+    at processTicksAndRejections (internal/process/task_queues.js:95:5)
+    at async Client.request (C:\Users\Arif Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:20)
+    at async Object.getFirebaseProject (C:\Users\Arif Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:290:21)
+    at async Object.doSetup [as project] (C:\Users\Arif Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\project.js:77:27)
+    at async init (C:\Users\Arif Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\index.js:19:9)
+[error] 
+[error] Error: Failed to get Firebase project ema-john-simple-e9bd8. Please make sure the project exists and your account has permission to access it.
